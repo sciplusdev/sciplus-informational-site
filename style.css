@@ -9,7 +9,7 @@ body {
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Roboto Slab', serif;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
     font-weight: 700;
 }
 
@@ -193,4 +193,5 @@ h1, h2, h3, h4 {
   .main-header h1 {
         font-size: 3.5rem;
     }
+
 }
