@@ -114,6 +114,10 @@ h1, h2, h3, h4 {
     padding: 0.25rem 0;
 }
 
+.map img {
+    width: 70%;
+}
+
 .store-links {
     margin-top: auto; /* Pushes buttons to the bottom */
     padding-top: 1rem;
@@ -201,6 +205,7 @@ h1, h2, h3, h4 {
     }
 
 }
+
 
 
 
