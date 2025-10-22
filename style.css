@@ -1,0 +1,196 @@
+/* General Body and Font Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+}
+
+/* Announcement Bar at the top */
+#announcement-bar {
+    background-color: #ffd700; /* A gold/yellow color */
+    color: #000;
+    text-align: center;
+    padding: 12px 20px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    font-size: 1rem;
+}
+
+#announcement-bar p {
+    margin: 0;
+}
+
+/* Main Header */
+.main-header {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.main-header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.main-header.tagline {
+    margin: 0.5rem 0 0;
+    font-size: 1.1rem;
+    color: #bdc3c7;
+}
+
+/* Main Content Container */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.intro-message {
+    text-align: center;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* Store Cards Layout */
+.stores-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+/* Individual Store Card Styling */
+.store-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.store-card h3 {
+    margin-top: 0;
+    color: #c0392b; /* A deep red color */
+}
+
+.store-card a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+.store-card a:hover {
+    text-decoration: underline;
+}
+
+.store-card.hours ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0.5rem 0;
+}
+
+.store-card.hours li {
+    padding: 0.25rem 0;
+}
+
+.store-links {
+    margin-top: auto; /* Pushes buttons to the bottom */
+    padding-top: 1rem;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.button {
+    display: inline-block;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #2980b9;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Image Gallery Section */
+.gallery {
+    text-align: center;
+    margin-top: 3rem;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.gallery-images {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.gallery-images img {
+    max-width: 100%;
+    height: auto;
+    width: 300px; /* Fixed width for consistency */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.gallery-caption {
+    margin-top: 1.5rem;
+    font-style: italic;
+    color: #555;
+}
+
+/* Footer Styling */
+.main-footer {
+    background-color: #34495e;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+}
+
+.social-links a {
+    color: #ecf0f1;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 500;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments for wider screens */
+@media (min-width: 768px) {
+  .stores-container {
+        grid-template-columns: 1fr 1fr; /* Two columns on tablets and desktops */
+    }
+
+  .main-header h1 {
+        font-size: 3.5rem;
+    }
+}
